@@ -1,0 +1,48 @@
+@media screen and (max-width: 1850px){
+	
+	section{
+		padding: 0 8%;
+		transition: 0.2s;
+	}
+}
+
+@media (max-width: 1370px){
+	section {
+		padding: 0 4%;
+		transition: 0.2s;
+	}
+}
+
+
+
+
+@media (max-width: 800px){
+	section{
+		padding: 70px 4%;
+	}
+	
+	.about {
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.about-content {
+		order: 2;
+	}
+	
+	.about-img{
+		margin: auto;
+		height: auto;
+		width: auto;
+	}
+	
+	.about-img img{
+		max-width: 300px;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+

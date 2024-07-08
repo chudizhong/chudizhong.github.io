@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chudi Zhong</title>
+    <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+	<header>
+    <nav class="nav container">
+		<ul class="sidebar">
+			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="./assets/cv.pdf">CV</a></li>
+		</ul>
+			
+		<ul>
+			<li class="nav-logo">Chudi Zhong</li>
+			<li class="hideOnMobile"><a href="index.html">Home</a></li>
+			<li class="hideOnMobile"><a href="research.html">Research</a></li>
+			<li class="hideOnMobile"><a href="teaching.html">Teaching</a></li>
+			<li class="hideOnMobile"><a href="./assets/cv.pdf">CV</a></li>
+			<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+		</ul>
+		
+    </nav>
+	</header>
+	
+	<section class="intro">
+		<div class="intro-content">
+			<h2 class="heading">Research</h2>
+			<p>My research focuses on developing <b style="color:#ff5b5b;">interpretable machine learning</b> algorithms and pipelines to 
+			   help people make better decisions in high-stakes situations. 
+			</p>
+			<p>I work on optimizing interpretable models such as decision trees and generalized additive models with 
+			   &ell;<sub>0</sub>-based sparsity constraints. 
+			   These algorithms are able to find simple, interpretable models that 
+			   achieve accuracy comparable to black-box models.
+			</p>
+			<p>My recent research focuses on the <b style="color: #ff5b5b;">Rashomon set</b>, which <i>enumerates, stores, and visualizes
+			   all models within &epsilon; of the optimal loss</i>. This paradigm enables seamless user interaction. 
+			   Models that satisfy arbitrary user constraints (e.g. monotonicity, fairness) can be found by simply filtering over the Rashomon set 
+			   instead of retraining. Model-free analysis can be conducted on metrics such as variable importance. 
+			</p>
+			<br>
+			<p><b>Areas:</b> Machine Learning, Optimization, Human-Model Interaction</p>
+			<p><b>Topics:</b> Interpretability, Rashomon Sets, Logical Models</p>
+			<p><b>Applications:</b> Healthcare, Finance, Criminal Justice</p>
+			
+			
+			
+	
+	</section>
+	
+
+	
+	<section class="awards">
+		<div class="awards-content">
+			<h2 class="heading">Publications</h2>
+			
+			<p>(* indicates co-first authors, equal contribution)</p>
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				The Amazing Things that Come From Having Many Good Models
+				</p>
+				<p class="pub-detail">
+				Cynthia Rudin, <b>Chudi Zhong</b>, Lesia Semenova, Margo Seltzer, Ronald Parr, Jiachang Liu, 
+				Srikar Katta, Jon Donnelly, Harry Chen, Zachery Boner
+				</p>
+				<p class="pub-detail">
+				ICML 2024 (Spotlight)
+				</p>
+				<p class="pub-award">
+				Spotlight Paper at ICML 2024
+				</p>
+			</div>
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				Exploring and Interacting with the Set of Good Sparse Generalized Additive Models
+				</p>
+				<p class="pub-detail">
+					<b>Chudi Zhong</b>*, Zhi Chen*, Jiachang Liu, Margo Seltzer, Cynthia Rudin
+				</p>
+				<p class="pub-detail">
+				NeurIPS 2023
+				</p>
+				<a href="https://arxiv.org/pdf/2303.16047.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/chudizhong/GAMsRashomonSet/tree/main" class="badge badge-info">Code</a>
+				<a href="https://www.youtube.com/watch?v=29dWTfUjNLk" class="badge badge-info">Video</a>
+			</div>
+			 
+			<div class="pub-content">
+				<p class="pub-title">
+				OKRidge: Scalable Optimal k-Sparse Ridge Regression for Learning Dynamical Systems
+				</p>
+				<p class="pub-detail">
+					Jiachang Liu, Sam Rosen, <b>Chudi Zhong</b>, Cynthia Rudin
+				</p>
+				<p class="pub-detail">
+				NeurIPS 2023 (Spotlight)
+				</p>
+				<p class="pub-award">
+				Spotlight Paper at NeurIPS 2023
+				</p>
+
+				<a href="https://arxiv.org/pdf/2304.06686.pdf" class="badge badge-info">Paper</a>
+			</div>
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				Exploring the Whole Rashomon Set of Sparse Decision Trees
+				</p>
+				<p class="pub-detail">
+					Rui Xin*, <b>Chudi Zhong</b>*, Zhi Chen*, Takuya Takagi, Margo Seltzer, Cynthia Rudin
+				</p>
+				<p class="pub-detail">
+				NeurIPS 2022 (Oral)
+				</p>
+				<p class="pub-award">
+				Oral Paper at NeurIPS 2022
+				</p>
+				<p class="pub-award">
+				Finalist, Data Mining Best Student Paper Award, INFORMS, 2022
+				</p>
+
+				<a href="https://arxiv.org/pdf/2209.08040.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/ubc-systopia/treeFarms" class="badge badge-info">Code</a>
+			</div>
+					
+					
+			<div class="pub-content">
+				<p class="pub-title">
+				FasterRisk: Fast and Accurate Interpretable Risk Scores
+				</p>
+				<p class="pub-detail">
+					Jiachang Liu*, <b>Chudi Zhong</b>*, Boxuan Li, Margo Seltzer, Cynthia Rudin
+				</p>
+				<p class="pub-detail">
+				NeurIPS 2022
+				</p>
+
+				<a href="https://arxiv.org/pdf/2210.05846.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/jiachangliu/FasterRisk" class="badge badge-info">Code</a>
+			</div>
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				TimberTrek: Exploring and Curating Trustworthy Decision Trees with Interactive Visualization
+				</p>
+				<p class="pub-detail">
+					Zijie Wang, <b>Chudi Zhong</b>, Rui Xin, Takuya Takagi, Zhi Chen, Duen Horng Chau, Cynthia Rudin, Margo Seltzer
+				</p>
+				<p class="pub-detail">
+				IEEE VIS 2022
+				</p>
+
+				<a href="https://arxiv.org/pdf/2209.09227.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/poloclub/timbertrek" class="badge badge-info">Code</a>
+				<a href="https://poloclub.github.io/timbertrek/" class="badge badge-info">Demo</a>
+			</div>
+			
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				Fast Sparse Classification for Generalized Linear and Additive Models
+				</p>
+				<p class="pub-detail">
+					Jiachang Liu, <b>Chudi Zhong</b>, Margo Seltzer, Cynthia Rudin
+				</p>
+				<p class="pub-detail">
+				AISTATS 2022
+				</p>
+
+				<a href="https://arxiv.org/pdf/2202.11389.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/jiachangliu/fastSparse" class="badge badge-info">Code</a>
+			</div>
+             
+			<div class="pub-content">
+				<p class="pub-title">
+				Fast Sparse Decision Tree Optimization via Reference Ensembles
+				</p>
+				<p class="pub-detail">
+					Hayden McTavish*, <b>Chudi Zhong</b>*, 
+					Reto Achermann, Ilias Karimalis, Jacques Chen, Cynthia Rudin, Margo Seltzer
+				</p>
+				<p class="pub-detail">
+				AAAI 2022
+				</p>
+
+				<a href="https://arxiv.org/pdf/2112.00798.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/ubc-systopia/gosdt-guesses/" class="badge badge-info">Code</a>
+			</div>
+			
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges
+				</p>
+				<p class="pub-detail">
+					Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, <b>Chudi Zhong</b>
+				</p>
+				<p class="pub-detail">
+				Statistics Surveys 2022
+				</p>
+
+				<a href="https://arxiv.org/pdf/2103.11251.pdf" class="badge badge-info">Paper</a>
+			</div>
+			
+			<div class="pub-content">
+				<p class="pub-title">
+				Generalized and Scalable Optimal Sparse Decision Trees
+				</p>
+				<p class="pub-detail">
+					Jimmy Lin*, <b>Chudi Zhong</b>*, Diane Hu, Cynthia Rudin, Margo Seltzer
+				</p>
+				<p class="pub-detail">
+				ICML 2020
+				</p>
+
+				<a href="https://arxiv.org/pdf/2006.08690.pdf" class="badge badge-info">Paper</a>
+				<a href="https://github.com/ubc-systopia/gosdt-guesses/" class="badge badge-info">Code</a>
+			</div>
+		</div>
+		
+	</section>
+	
+	
+		   
+	
+
+	<script>
+		function showSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = "flex"
+		}
+		
+		function hideSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = "none"
+		}
+	</script>
+</body>
+</html>

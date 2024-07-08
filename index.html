@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chudi Zhong</title>
+    <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+	<header>
+    <nav class="nav container">
+		<ul class="sidebar">
+			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="teaching.html">Teaching</a></li>
+			<li><a href="./assets/cv.pdf">CV</a></li>
+		</ul>
+			
+			<ul>
+				<!--<li class="nav-logo">Chudi Zhong</li>-->
+				<li class="hideOnMobile"><a href="index.html">Home</a></li>
+				<li class="hideOnMobile"><a href="research.html">Research</a></li>
+				<li class="hideOnMobile"><a href="teaching.html">Teaching</a></li>
+				<li class="hideOnMobile"><a href="./assets/cv.pdf">CV</a></li>
+				<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+			</ul>
+		
+    </nav>
+	</header>
+	
+	
+	
+	<section class="about">
+		<div class="about-img">
+			<img src="./assets/headshot.jpg" alt="profile picture">
+		</div>
+		<div class="about-content">
+			<h2 class="heading">Chudi Zhong</h2>
+			<p>Assistant Professor</p>
+			<p><a href="https://datascience.unc.edu/">School of Data Science and Society</a></p> 
+			<p><a href="https://stor.unc.edu/">Department of Statistics and Operations Research</a></p>
+			<p>University of North Carolina at Chapel Hill</p>
+			<br>
+			<p>Email: chudi [at] unc [dot] edu</p>
+			<p><a href="https://scholar.google.com/citations?user=DXKNTLIAAAAJ&hl=en">Google Scholar Profile</a></p>
+		</div>
+	</section>
+	
+	<section class="intro">
+		<div class="intro-content">
+			<h2 class="heading">About</h2>
+			<p>
+				I am an assistant professor in the School of Data Science and Society and 
+			    Department of Statistics and Operations Research at UNC-Chapel. 
+				I received my Ph.D. in Computer Science from Duke University.
+			</p>
+			
+			<p>	
+				My research lies at the intersection of machine learning, optimization, and human-model interaction. 
+		   	    I am interested in developing responsible machine learning algorithms and pipelines 
+				to facilitate high-stakes decision-making. 
+				Specifically, I have developed interpretable models that provably optimize accuracy and sparsity and  
+				introduced a new machine learning paradigm, called learning Rashomon sets,
+				to break the interaction bottleneck between users and machine learning algorithms by enumerating
+				and visualizing all well-performing models. 
+			</p>
+		</div>
+		
+	</section>
+	
+	<section class="awards">
+		<div class="awards-content">
+			<h2 class="heading">Selected Awards</h2>
+			<ul>
+				<li>
+					<b>Second Place, Bell Labs Prize, 2023</b>
+					<p>The Bell Labs Prize is an international competition to solicit game changing and impactful ideas 
+					that have the potential to change the way people live, work, and communicate with each other. 
+					Among 107 proposals received in 2023, we won the second place in the Bell Labs Prize. </p>
+				</li>
+				<li>
+					<b>Rising Stars in Data Science</b>
+					<p>University of Chicago, 2023</p>
+				</li>
+				<li>
+					<b>Outstanding Ph.D. Preliminary Research Award</b>
+					<p>Department of Computer Science, Duke University, 2023</p>
+				</li>
+				<li>
+					<b>Finalist, Best Student Paper Award</b>
+					<p>Data Mining Society, INFORMS, 2022</p>
+				</li>
+			</ul>
+		</div>
+		
+	</section>
+	
+	<footer>
+	    <div class="footer-content">
+			<p style="margin-top: 0.1rem; text-align: left;">Updated on 07-2024
+			</p>
+		</div>
+	</footer>
+		   
+	
+
+
+	<script>
+		function showSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = "flex"
+		}
+		
+		function hideSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = "none"
+		}
+	</script>
+</body>
+</html>

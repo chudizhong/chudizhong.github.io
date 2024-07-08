@@ -1,0 +1,277 @@
+/*GENERAL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+	padding-top: 90px;
+}
+
+html {
+	scroll-behavior: smooth; /*hyperlinks or sections smoothly*/
+}
+
+p {
+	color: #3d3d3d;
+}
+
+/*TRANSITION*/
+a, .btn{
+	transition: all 300ms ease;
+}
+
+
+
+/*NAV*/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+nav{
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+	padding: 10px 20%;
+	background-color: #fff;
+	/*border-bottom-color: #fafafa;*/
+}
+
+nav ul{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 2rem;
+}
+
+nav li{
+	height: 50px;
+}
+
+nav a{
+	height: 100%;
+	padding: 0 0;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: #1176B2;
+}
+
+nav a:hover{
+	color: #e91b1b;
+	text-decoration: underline;
+	text-underline-offset: 0.5rem;
+	text-decoration-color: #e91b1b;
+}
+
+/*nav li:first-child{
+	margin-right: auto;
+}*/
+
+
+
+.nav-logo{
+	margin-right: auto;
+	font-size: 1.6rem;
+	color: #3d3d3d;
+	align-items: center;
+	height: 100%;
+}
+
+.sidebar{
+	position: fixed;
+	top: 5px;
+	right: 0;
+	height: fit-content;
+	min-height: fit-content;
+	width: 250px;
+	z-index: 999;
+	background-color: #fff;
+	backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 0rem;
+}
+
+.sidebar li{
+	width: 100%;
+	height: 50px;
+}
+
+.sidebar a{
+	width: 100%;
+	padding: 0 30px;
+}
+
+
+
+.menu-button{
+	display: none;
+}
+
+@media(max-width: 900px){
+	.hideOnMobile{
+		display: none;
+	}
+	.menu-button{
+		display: block;
+	}
+}
+
+@media(max-width: 400px){
+	.sidebar{
+		width: 100%;
+	}
+}
+
+
+
+.about{
+	position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 2% 20% 1.5%;
+	gap: 3rem;
+	background: #fff;
+}
+
+.about-img {
+	width: 230px;
+}
+
+.about-img img{
+	position: relative;
+	width: 100%;
+	margin: auto 0;
+}
+
+.about-content h2{
+	text-align: left;
+	color: #474747;
+	font-size: 1.6rem;
+	font-weight: 550;
+	margin-bottom: 0.8rem;
+}
+
+.about-content p {
+	font-size: 1rem;
+	margin: 0.2em 0 0.2em;
+}
+
+.about-content a{
+	color: #1176B2;
+	text-decoration: none;
+}
+
+
+.intro, .awards, footer{
+	position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 2% 20% 1%;
+	background: #fff;
+}
+
+.intro-content, .awards-content, .footer-content{
+	width: 100%;
+}
+
+.intro-content h2, .awards h2{
+	text-align: left;
+	color: #3d3d3d;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 0.8rem;
+	border-bottom:1px solid #CCC;
+	padding-bottom: 5px;
+}
+
+.intro-content p {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+
+.awards-content ul{
+	text-align: left;
+	color: #3d3d3d;
+	font-size: 1rem;
+	margin-left: 1rem;
+}
+
+.awards-content p {
+	font-size: 1rem;
+	margin: 0.3rem 0 1rem;
+}
+
+.pub-content{
+	background: #fafafa;
+	margin-bottom: 2rem;
+	border-left: thick solid #1176B2;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	font-size: 0.9rem;
+	padding: 0.6rem 1.5rem;
+}
+
+.pub-content .pub-title {
+	margin-bottom: 0.5rem;
+	font-weight: 550;
+}
+
+.pub-content .pub-detail {
+	font-size: 0.88rem;
+	margin-bottom: 0.2rem;
+}
+
+.pub-content .pub-award {
+	font-size: 0.8rem;
+	color: #ff4b4b; 
+	font-weight: 600;
+	margin-bottom: 0.2rem;
+}
+
+.pub-content .badge{
+	margin: 0.4rem 0.3rem 0 0;
+	display: inline-block;
+	/*background-color: rgba(17,118,178, 0.9);*/
+	/*background: linear-gradient(to right, #1176b2, #fafafa);*/
+	background: #f0f0f0;
+	/*border: thin solid #1176b2;
+	border-left: thick solid #1176B2;*/
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  padding: 0.25em 0.5em;
+  font-size: 90%;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 0.25rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.footer-content {
+	font-size: 0.8rem;
+	border-top: thin solid #CCC;
+	margin-bottom: 2rem;
+}
+
+
+
+
+
