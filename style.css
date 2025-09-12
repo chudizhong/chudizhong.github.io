@@ -289,15 +289,15 @@ nav a:hover{
 	  flex-shrink: 0;       /* prevents avatar from shrinking */
     }
 .avatar img {
-	position: relative;
 	width: 100%;
 	height: 100%;
 	object-fit: cover; /* keeps face centered and fills circle */
+	display: block;
 }
 
 .group-content {
 	font-size: 1rem;
-	margin: 0.2em 0 0.2em;
+	margin: 0;
 }
 
 
