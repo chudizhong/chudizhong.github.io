@@ -273,51 +273,35 @@ nav a:hover{
 }
 
 .group-table {
-      border-collapse: separate; /* allow spacing */
-      border-spacing: 0 15px;    /* vertical gap between rows */
-      /*font-family: Arial, sans-serif;*/
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 0;
+	gap: 3rem;
+	background: #fff;
     }
-
-td {
-      padding: 20px 20px;
-      vertical-align: middle;
-    }
-
-.icon {
-      width: 40px;
-      height: 40px;
-      border: 2px solid #555;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 36px;
-      font-size: 20px;
-      color: #555;
-	  }
-	  
+ 
 .avatar {
       width: 100px;
       height: 100px;
       overflow: hidden;
+	  flex-shrink: 0;       /* prevents avatar from shrinking */
     }
 .avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* keeps face centered and fills circle */
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* keeps face centered and fills circle */
 }
+
+.group-content {
+	font-size: 1rem;
+	margin: 0.2em 0 0.2em;
+}
+
+
 	  
-.name {
-  color: #1176B2; /* orange */
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.role {
-  margin: 6px 0 0;
-  font-size: 0.9rem;
-  color: #000;
-}
-
-
 
 
 
