@@ -218,6 +218,25 @@ nav a:hover{
 	margin: 0.3rem 0 1rem;
 }
 
+.awards-content a {
+	color: #1176B2;;
+	text-decoration: none;
+}
+
+.awards-content a:hover{
+	color: #e91b1b;
+}
+
+
+
+.awards-content img{
+	margin:2rem auto; max-width:100%; height:auto;
+	object-fit: cover; /* keeps face centered and fills circle */
+	display: block;
+}
+
+
+
 .pub-content{
 	background: #fafafa;
 	margin-bottom: 2rem;
