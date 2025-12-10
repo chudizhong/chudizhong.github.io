@@ -14,7 +14,7 @@
 		<ul class="sidebar">
 			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="research.html">Research</a></li>
+			<li><a href="research.html">Publications</a></li>
 			<li><a href="group.html">Group</a></li>
 			<li><a href="teaching.html">Teaching</a></li>
 			<li><a href="./assets/cv.pdf">CV</a></li>
@@ -23,7 +23,7 @@
 		<ul>
 			<li class="nav-logo">Chudi Zhong</li>
 			<li class="hideOnMobile"><a href="index.html">Home</a></li>
-			<li class="hideOnMobile"><a href="research.html">Research</a></li>
+			<li class="hideOnMobile"><a href="research.html">Publications</a></li>
 			<li class="hideOnMobile"><a href="group.html">Group</a></li>
 			<li class="hideOnMobile"><a href="teaching.html">Teaching</a></li>
 			<li class="hideOnMobile"><a href="./assets/cv.pdf">CV</a></li>
@@ -57,21 +57,34 @@
 			<!--<h2 class="heading">About</h2>-->
 			<p>
 				I am an assistant professor in the School of Data Science and Society and 
-			    Department of Statistics and Operations Research at UNC-Chapel. 
+			    Department of Statistics and Operations Research at UNC-Chapel Hill. 
 				I received my Ph.D. in Computer Science from Duke University.
 			</p>
 			
-			<p>	
-				My research lies at the intersection of machine learning, optimization, and human-model interaction. 
-		   	    I am interested in developing responsible machine learning algorithms and pipelines 
-				to facilitate high-stakes decision-making. 
-				Specifically, I have developed interpretable models that provably optimize accuracy and sparsity and  
-				introduced a new machine learning paradigm, called learning Rashomon sets,
-				to break the interaction bottleneck between users and machine learning algorithms by enumerating
-				and visualizing all well-performing models. 
-			</p>
-			<p style="color:#ff5b5b;">
-				If you are interested in collaborating or joining my group, feel free to reach out!
+			<p>
+				My research focuses on understanding and controlling <b>model diversity</b> in modern machine learning, 
+				and on building <b>trustworthy and reliable AI systems</b>. 
+				A central theme of my work is the <b>Rashomon Effect</b>, the existence of many equally accurate 
+				yet behaviorally distinct models, and its implications for scientific understanding of learning 
+				and model behavior. Current key directions include:
+				<ol>
+					<li>
+						characterize the set of near-optimal models or equally valid outputs, 
+						and study the variability that arises across them
+					</li>
+					<li>
+						leverage model diversity to reveal alternative explanations and failure modes 
+						and support human-aligned, interpretable, and stable reasoning in modern ML systems and LLMs.
+					</li>
+				</ol>
+			</p> 
+			
+			<br>
+			
+			<p style="color:#FF0000;">
+				<b>Lab Openings:</b>
+				I am actively recruiting highly motivated <b>PhD students and multiple research interns</b> with strong technical backgrounds. 
+				Candidates who are interested are strongly encouraged to contact me via email, including a resume and transcripts.
 			</p>
 		</div>
 		
@@ -83,17 +96,8 @@
 			<ul>
 				<li>
 					<p>
-						<b>Workshop Announcement (AAAI 2026)</b>
+						<b>[Jan 2026]</b> I will co-organize a tutorial and a workshop on the Rashomon Effect at AAAI 26 in Singapore.
 					</p>
-					<p>I’m co-organizing the <a href="https://sites.google.com/view/rashomon-aaai-workshop/">
-						<b style="color:#ff5b5b;">Navigating Model Uncertainty and the Rashomon Effect: 
-					   From Theory and Tools to Applications and Impact</b></a>, 
-					   which will be held at AAAI 2026 in Singapore (January 27, 2026).
-					</p>
-					<p>Submission deadline: October 15, 2025.</p>
-					<p>Call for papers is open: <a href="https://sites.google.com/view/rashomon-aaai-workshop/">https://sites.google.com/view/rashomon-aaai-workshop/</a></p>
-					<p>Volunteer to Review: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGOwE0kFQ_6j-lgIZmdktQvezhUFecnCGX7lGH3QcZm6GamA/viewform">review invitation</a></p>			
-					<img src="./assets/MURE_ad_resized.jpg" alt="MURE Workshop">
 				</li>
 			</ul>
 		</div>
@@ -130,8 +134,6 @@
 	
 	<footer>
 	    <div class="footer-content">
-			<p style="margin-top: 0.1rem; text-align: left;">Updated on 09-2025
-			</p>
 		</div>
 	</footer>
 		   
@@ -151,3 +153,4 @@
 	</script>
 </body>
 </html>
+
